@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Community | Bloom Valley Nursery</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <button class="toggle-dark-mode">Toggle Dark Mode</button>
+
+  <header>
+    <div class="header-content">
+      <img src="Images/BVN_Logo_2.png" alt="Bloom Valley Nursery Logo" class="logo" />
+      <h1>Bloom Valley Nursery</h1>
+      <div class="weather-info">Loading weather...</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="community.html">Community</a></li>        
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>What Our Customers Say</h2>
+      <blockquote>“Bloom Valley Nursery helped me start my first organic garden — and now I grow food for my whole family!” – Paul B.</blockquote>
+      <blockquote>“Their monthly workshops are a must! It’s great meeting other gardeners.” – Luis D.</blockquote>
+    </section>
+
+    <!-- Decorative Image #1 -->
+    <figure style="margin: 2rem auto; max-width: 700px;">
+      <img src="Images/Client1_StringofPearls.png" alt="Decorative community plant photo" style="width: 100%; border-radius: 8px;" />
+      <figcaption style="text-align: center; font-style: italic;">Pearl of Wisdom – Shared growth begins with shared roots.</figcaption>
+    </figure>
+
+    <section>
+      <h2>Our Partners</h2>
+      <p>We proudly collaborate with <em>Local Roots Co-op</em> and <em>NatureNow Education</em> to bring sustainable practices to every neighborhood.</p>
+    </section>
+
+    <!-- Decorative Image #2 -->
+    <figure style="margin: 2rem auto; max-width: 700px;">
+      <img src="Images/Client1_WateringCan.png" alt="Decorative watering can image" style="width: 100%; border-radius: 8px;" />
+      <figcaption style="text-align: center; font-style: italic;">Water – The splash of life.</figcaption>
+    </figure>
+
+    <section>
+      <h2>Upcoming Local Events</h2>
+      <ul id="event-addresses">
+        <li><strong>June 15th </strong><a href="#" data-map="38.7451,-77.4903">Summer Seed Swap – Riverdale Park</a></li>
+        <li><strong>July 10th </strong><a href="#" data-map="38.6292,-77.2736">Community Garden Build – Dale City</a></li>
+      </ul>
+    </section>
+
+    <section id="contact-location" class="container">
+      <h2>Visit Us</h2>
+
+      <div class="map-info-wrapper" style="display: flex; flex-wrap: wrap; gap: 2rem;">
+        <!-- Map -->
+        <div style="flex: 1 1 300px; min-width: 300px;">
+          <iframe
+            id="main-map"
+            src="https://www.google.com/maps?q=13850 Noblewood Plaza, Woodbridge, VA 22193&output=embed"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            title="Bloom Valley Nursery Location"
+          ></iframe>
+        </div>
+
+        <!-- Contact Info -->
+        <div style="flex: 1 1 300px; min-width: 300px;">
+          <address>
+            <strong><a href="#" data-map="38.6524707,-77.3160039">Bloom Valley Nursery</a></strong><br>
+            13850 Noblewood Plaza<br>
+            Woodbridge, VA 22193-1451<br><br>
+
+            <strong>Phone:</strong> <a href="tel:+17035551234">(703) 555-1234</a><br>
+            <strong>Email:</strong> <a href="mailto:info@bloomvalleygardening.com">info@bloomvalleygardening.com</a><br><br>
+
+            <strong>Business Hours:</strong><br>
+            Monday–Friday: 9 AM – 6 PM<br>
+            Saturday-Sunday: 10 AM – 5 PM<br>
+          </address>
+        </div>
+      </div>
+
+      <!-- Decorative Image #3 -->
+      <figure style="margin: 2rem auto; max-width: 700px;">
+        <img src="Images/Client1_BirdHouse.png" alt="Decorative birdhouse community photo" style="width: 100%; border-radius: 8px;" />
+        <figcaption style="text-align: center; font-style: italic;">Bird Sanctuary – Welcoming all walks (and wings) of life.</figcaption>
+      </figure>
+
+      <h3>Other Community Events</h3>
+      <ul id="event-addresses-alt">
+        <li><a href="#" data-map="38.58528,-77.37972">Forest Nature Walk – Prince William Forest Park </a></li>
+        <li><a href="#" data-map="38.658707,-77.257919">Farmers and Flowers Market – Occoquan </a></li>
+        <li><a href="#" data-map="38.6292,-77.2736">Garden Tea Social – Dale City</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <form id="subscribe-form">
+      <label for="subscribe-email" class="sr-only">Subscribe</label>
+      <input type="email" id="subscribe-email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <div class="social-icons" style="margin-top: 1rem;">
+      <a href="https://www.facebook.com/YourPage" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
+      <a href="https://www.instagram.com/YourPage" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+      <a href="https://x.com/YourPage" target="_blank" aria-label="Twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://www.youtube.com/YourChannel" target="_blank" aria-label="YouTube">
+        <i class="fab fa-youtube fa-lg"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/YourProfile" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin fa-lg"></i>
+      </a>
+    </div>
+    <p>&copy; 2025 Bloom Valley Nursery | Cultivate community</p>
+  </footer>
+
+  <div id="alertBox" class="alert" role="alert" aria-live="polite"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Bloom Valley Nursery</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <button class="toggle-dark-mode">Toggle Dark Mode</button>
+
+  <header>
+    <div class="header-content">
+      <img src="Images/BVN_Logo_2.png" alt="Bloom Valley Nursery Logo" class="logo" />
+      <h1>Bloom Valley Nursery</h1>
+      <div class="weather-info">Loading weather...</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="community.html">Community</a></li>        
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>About Us</h2>
+      <p>Bloom Valley Nursery is a community-first gardening hub committed to sustainable living and education. We believe everyone can grow their own food, help others, and feel connected to nature.</p>
+    </section>
+
+    <!-- Decorative Image #1 -->
+    <figure style="margin: 2rem auto; max-width: 700px;">
+      <img src="Images/Client1_BirchTree.png" alt="Decorative birch tree photo" style="width: 100%; border-radius: 8px;" />
+      <figcaption style="text-align: center; font-style: italic;">Birch – rooted in tradition, growing with intention.</figcaption>
+    </figure>
+
+    <section>
+      <h2>Let Us Hear From You!</h2>
+      <p>You have a question? You want to join our newsletter? Provide your information in the fields provided.</p>
+      <form id="contact-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Feedback / Custom Order Details:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Decorative Image #2 -->
+    <figure style="margin: 2rem auto; max-width: 700px;">
+      <img src="Images/Client1_PottingSoil.png" alt="Decorative potting soil image" style="width: 100%; border-radius: 8px;" />
+      <figcaption style="text-align: center; font-style: italic;">Potting Soil – Nurturing the roots of every gardener’s journey.</figcaption>
+    </figure>
+  </main>
+
+  <footer>
+    <form id="subscribe-form">
+      <label for="subscribe-email" class="sr-only">Subscribe</label>
+      <input type="email" id="subscribe-email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+    <div class="social-icons" style="margin-top: 1rem;">
+      <a href="https://www.facebook.com/YourPage" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
+      <a href="https://www.instagram.com/YourPage" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+      <a href="https://x.com/YourPage" target="_blank" aria-label="Twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://www.youtube.com/YourChannel" target="_blank" aria-label="YouTube">
+        <i class="fab fa-youtube fa-lg"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/YourProfile" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin fa-lg"></i>
+      </a>
+    </div>
+    <p>&copy; 2025 Bloom Valley Nursery | Garden's home away from home.</p>
+  </footer>
+
+  <div id="alertBox" class="alert" role="alert" aria-live="polite"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
