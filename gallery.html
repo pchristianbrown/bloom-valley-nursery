@@ -18,10 +18,10 @@
     </div>
     <nav>
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="community.html">Community</a></li>        
+        <li><a href="community.html">Community</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
       </ul>
     </nav>
   </header>
@@ -92,10 +92,11 @@
         </tr>
       </table>
 
+      <!-- Functional Buttons Outside Modal -->
       <div style="text-align: center; margin-top: 1rem;">
-        <button id="view-cart">View Cart</button>
-        <button id="clear-cart">Clear Cart</button>
-        <button id="process-order">Process Order</button>
+        <button class="view-cart">View Cart</button>
+        <button class="clear-cart">Clear Cart</button>
+        <button class="process-order">Process Order</button>
       </div>
     </section>
   </main>
@@ -126,6 +127,7 @@
     <p>&copy; 2025 Bloom Valley Nursery | Grow With Us</p>
   </footer>
 
+  <!-- Alerts -->
   <div id="alertBox" class="alert" role="alert" aria-live="polite"></div>
 
   <!-- Cart Modal -->
@@ -134,8 +136,8 @@
     <h3>Your Cart</h3>
     <ul></ul>
     <div class="modal-actions">
-      <button id="clear-cart">Clear Cart</button>
-      <button id="process-order">Process Order</button>
+      <button class="clear-cart">Clear Cart</button>
+      <button class="process-order">Process Order</button>
     </div>
   </div>
 
