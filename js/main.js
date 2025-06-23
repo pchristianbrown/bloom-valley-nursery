@@ -44,9 +44,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // Alert message handler
   function showAlert(msg) {
     if (!alertBox) return;
+    alertBox.classList.remove('fade-out');
     alertBox.textContent = msg;
     alertBox.classList.add('show');
-    setTimeout(() => alertBox.classList.remove('show'), 4000);
+    //setTimeout(() => alertBox.classList.remove('show'), 8000);
+    setTimeout(()=> {
+      alertBox.classList.add('fade-out');
+      setTimeout(() => {
+        alertBox.classList.remove('show', 'fade-out');
+      }, 500);
+    }, 5000);
   }
 
   // Subscribe form
